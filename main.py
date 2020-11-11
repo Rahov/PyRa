@@ -13,7 +13,7 @@ def main():
         csv = pd.read_csv(os.path.abspath("stocks.csv"))
     except Exception as e:
         print(term.col.WARNING, "Execution Error: %s" % e, term.colENDC)
-    data = calc.grab_data(csv[0:15], years, today)
+    data = calc.grab_data(csv, years, today)
     term.terminal(data, data.index)
 
 if __name__=="__main__":

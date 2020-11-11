@@ -21,7 +21,7 @@ def terminal(_stocks, _csv):
             print(col.OKGREEN+"{:<8.2f}\033[0m|  ".format(_stocks["20-MA"][i]), end="")
         else:
             print("{:<8.2f}|  ".format(_stocks["20-MA"][i]), end="")
-        if _stocks['RSI'][i] < 31:
+        if _stocks['RSI'][i] < 35:
             print(col.OKGREEN+"{:<6.1f}\033[0m|  ".format(_stocks["RSI"][i]), end="")
         else:
             print("{:<6.1f}|  ".format(_stocks["RSI"][i]), end="")

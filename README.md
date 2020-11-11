@@ -12,3 +12,8 @@ Stock or Symbol data is grabbed from Yahoo. (ensure the symbols in stocks.csv ar
 
 ### Preview:
 ![desktop preview](preview.png)
+
+### To-Do:
+
+1. Connect to the Dix Index
+2. Add Argument Parser
