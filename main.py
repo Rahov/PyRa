@@ -14,6 +14,7 @@ def main():
     except Exception as e:
         print(term.col.WARNING, "Execution Error: %s" % e, term.colENDC)
     data = calc.grab_data(csv, years, today)
+    #data = data[data['Dip?']=='Ye']
     term.terminal(data, data.index)
 
 if __name__=="__main__":
